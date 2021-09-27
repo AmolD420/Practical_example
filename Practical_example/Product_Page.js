@@ -68,12 +68,12 @@ function onSuccessData(data) {
             if (val.fieldType.toLowerCase() == "textbox") {
                 if (val.id == 1) {
                     for (var i = 1; i < 17; i++) {
-                        strHtml = strHtml + '<td><input type="text" class="form-control numeric" maxlength="2" onkeyup="return isNumber(event,this,5,11)" title="Enter only Minimum 5 and Maximum 11 value."/></td>';
+                        strHtml = strHtml + '<td><input type="text" class="form-control numeric" maxlength="2" onkeyup="return isNumber(event,this,5,10)" title="Enter only Minimum 5 and Maximum 11 value."/></td>';
                     }
                 }
                 else if (val.id == 2) {
                     for (var i = 1; i < 17; i++) {
-                        strHtml = strHtml + '<td><input type="text" class="form-control decimal" maxlength="3" onkeyup="return isNumberDecimal(event,this,5.5,10.5)" title="Enter only Minimum 5.5 and Maximum 10.5 value."/></td>';
+                        strHtml = strHtml + '<td><input type="text" class="form-control decimal" maxlength="4" onkeyup="return isNumberDecimal(event,this,5.0,9.5)" title="Enter only Minimum 5.5 and Maximum 10.5 value."/></td>';
                     }
                 }
                 else {
